@@ -1,0 +1,65 @@
+[
+    {
+        "type": "transform context",
+        "file": "/Users/yanghuabei/project/swanParse/app.js",
+        "row": 5,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/yanghuabei/project/swanParse/app.js",
+        "row": 7,
+        "column": 4,
+        "before": "wx.setStorageSync",
+        "after": "swan.setStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/yanghuabei/project/swanParse/app.js",
+        "row": 15,
+        "column": 6,
+        "before": "wx.login",
+        "after": "swan.login",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/yanghuabei/project/swanParse/app.js",
+        "row": 17,
+        "column": 10,
+        "before": "wx.getUserInfo",
+        "after": "swan.getUserInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/yanghuabei/project/swanParse/utils/util.js",
+        "row": 46,
+        "column": 8,
+        "before": "wx.request",
+        "after": "swan.request",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/yanghuabei/project/swanParse/wxParse/wxParse.js",
+        "row": 22,
+        "column": 0,
+        "before": "wx.getSystemInfo",
+        "after": "swan.getSystemInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "/Users/yanghuabei/project/swanParse/wxParse/wxParse.js",
+        "row": 60,
+        "column": 4,
+        "before": "wx.previewImage",
+        "after": "swan.previewImage",
+        "message": "只转换了上下文, wx ==> swan"
+    }
+]

@@ -1,7 +1,6 @@
 var WxParse = require('../../wxParse/wxParse.js');
 Page({
-  data: {
-  },
+  data: {},
   onLoad: function () {
     var that = this;
     /**
@@ -28,7 +27,7 @@ Page({
       "16": "16.gif",
       "17": "17.gif",
       "18": "18.gif",
-      "19": "19.gif",
+      "19": "19.gif"
     });
     /**
      * html解析示例
@@ -145,10 +144,8 @@ Page({
 	</div>
 	<!--ap-->
     `;
-		
-    
-    WxParse.wxParse('article', 'html', article, that, 5);
 
+    WxParse.wxParse('article', 'html', article, that, 5);
 
     /**
      * 多数据解析示例
@@ -191,14 +188,12 @@ Page({
     replyArr.push(replyHtml4);
     replyArr.push(replyHtml5);
 
-
     for (let i = 0; i < replyArr.length; i++) {
       WxParse.wxParse('reply' + i, 'html', replyArr[i], that);
       if (i === replyArr.length - 1) {
-        WxParse.wxParseTemArray("replyTemArray",'reply', replyArr.length, that)
+        WxParse.wxParseTemArray("replyTemArray", 'reply', replyArr.length, that);
       }
     }
   }
 
-
-})
+});
