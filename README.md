@@ -1,11 +1,10 @@
 
-<p align="center"><a href="https://github.com/icindy/wxParse" target="_blank"><img src="screenshoot/wxParse_logo.jpg"></a></p>
-<p align="center"><a href="https://github.com/icindy/wxParse" target="_blank"><img src="screenshoot/weappmsg_qr.jpg"></a></p>
-<h1 align="center" style="margin-bottom: 20px;">wxParse-微信小程序富文本解析组件</h1>
-<h2 align="center">支持Html及markdown转wxml可视化</h2>
+<p align="center"><a href="https://github.com/yanghuabei/swanParse" target="_blank"><img src="screenshoot/wxParse_logo.jpg"></a></p>
+<p align="center"><a href="https://github.com/yanghuabei/swanParse" target="_blank"><img src="screenshoot/weappmsg_qr.jpg"></a></p>
+<h1 align="center" style="margin-bottom: 20px;">swanParse-百度小程序富文本解析组件（对wxParse使用wx2swan自动生成）</h1>
+<h2 align="center">支持Html及markdown转swan可视化</h2>
 <p align="center"><code>版本号:0.3</code></p>
-<p align="center">来源: [微信小程序开发论坛-weappdev](https://weappdev.com)</p>
-<p align="center">作用: 将Html/Markdown转换为微信小程序的可视化方案</p>
+<p align="center">作用: 将Html/Markdown转换为百度小程序的可视化方案</p>
 
 
 ## 特性
@@ -41,8 +40,8 @@
   -htmlparser.js(必须存在)
   -showdown.js(必须存在)
   -wxDiscode.js(必须存在)
-  -wxParse.wxml(必须存在)
-  -wxParse.wxss(必须存在)
+  -wxParse.swan(必须存在)
+  -wxParse.css(必须存在)
   -emojis(可选)
 ```
 
@@ -54,8 +53,8 @@ var WxParse = require('../../wxParse/wxParse.js');
 ```
 
 ```
-//在使用的Wxss中引入WxParse.css,可以在app.wxss
-@import "/wxParse/wxParse.wxss";
+//在使用的Wxss中引入WxParse.css,可以在app.css
+@import "/wxParse/wxParse.css";
 ```
 
 * 3. 数据绑定
@@ -76,7 +75,7 @@ WxParse.wxParse('article', 'html', article, that, 5);
 * 4. 模版引用
 ```
 // 引入模板
-<import src="你的路径/wxParse/wxParse.wxml"/>
+<import src="你的路径/wxParse/wxParse.swan"/>
 //这里data中article为bindName
 <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
 ```
@@ -117,11 +116,11 @@ WxParse.emojisInit('[]', "/wxParse/emojis/", {
 ```
 
 * 多数据格式
- + 参见wiki[wxParse多数据循环使用方法](https://github.com/icindy/wxParse/wiki/wxParse%E5%A4%9A%E6%95%B0%E6%8D%AE%E5%BE%AA%E7%8E%AF%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95)
+ + 参见wiki[swanParse多数据循环使用方法](https://github.com/yanghuabei/swanParse/wiki/wxParse%E5%A4%9A%E6%95%B0%E6%8D%AE%E5%BE%AA%E7%8E%AF%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95)
 
 ## FAQ
 
-* 参见wiki[weParse常见问题FAQ](https://github.com/icindy/wxParse/wiki/wxParse%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98FAQ)
+* 参见wiki[swanParse常见问题FAQ](https://github.com/yanghuabei/swanParse/wiki/wxParse%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98FAQ)
 
 ## 二次开发
 
@@ -149,13 +148,3 @@ parsedata:{
 ## 捐献
 
 * 参见wiki[捐献作者](https://github.com/icindy/wxParse/wiki/%E6%8D%90%E7%8C%AE%E4%BD%9C%E8%80%85)
-
-## 来源
-[微信小程序开发论坛](http://weappdev.com)
-垂直微信小程序开发交流社区
-
-可在网站扫描二维码进入我们的微信小程序群，也可以微信搜索"weappmsg"进入"小码消息"公众号
-![小码消息-weappmsg](screenshoot/weappmsg_qr.jpg)
-其他方式:合作qq群511389428
-
-
