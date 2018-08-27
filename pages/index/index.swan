@@ -1,0 +1,11 @@
+
+<import src="../../wxParse/wxParse.swan" /> 
+<view class="wxParse">
+    <template is="wxParse" data="{{{wxParseData:article.nodes}}}" />
+</view>
+
+<view style="padding: 20px 10px; background-color:#eee;">
+    <block s-for="item, index in replyTemArray" s-key="">
+        回复{{index}}:<template is="wxParse" data="{{{wxParseData:item}}}" />
+    </block>
+</view>
